@@ -24,7 +24,11 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     runtimeOnly("com.h2database:h2")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.3")
+    implementation ("org.axonframework:axon-configuration")
+    implementation ("org.axonframework:axon-server-connector")
+    testImplementation ("org.axonframework:axon-test:4.5.2")
+    implementation ("org.axonframework:axon-spring-boot-starter:4.5.2")
 }
 
 tasks.withType<KotlinCompile> {
